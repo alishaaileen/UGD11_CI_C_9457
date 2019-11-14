@@ -24,7 +24,7 @@ Class Bengkel extends REST_Controller{
 			[
 				'field' => 'phoneNumber',
 				'label' => 'phoneNumber',
-				'rules' => 'required|is_unique[branches.phoneNumber]'
+				'rules' => 'required|numeric|is_unique[branches.phoneNumber]'
 			]
 		);
         $validation->set_rules($rule);

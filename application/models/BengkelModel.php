@@ -19,7 +19,7 @@ class BengkelModel extends CI_Model
 		[
 			'field' => 'phoneNumber',
 			'label' => 'phoneNumber',
-			'rules' => 'required|integer|is_unique[branches.phoneNumber]'
+			'rules' => 'required|numeric|is_unique[branches.phoneNumber]'
 		]
     ];
     public function Rules() { return $this->rule; }
